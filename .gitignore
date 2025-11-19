@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Odoo specifics
+*.log
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.zip
+*.egg-info
+.idea/
+.vscode/
+*.iml
+
+# Development environments
+.env
+venv/
+venv/*
+
+# Cache
+*.cache
+.cache
+tmp/
+temp/
