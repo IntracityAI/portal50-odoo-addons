@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/banner.png" alt="Intracity AI Banner" width="100%">
+</p>
+
 # 🚀 Portal50 Odoo Addons — Developer Guide（外包开发指南）
 **Intracity AI Technology Ltd.**
 
