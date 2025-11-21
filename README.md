@@ -181,8 +181,8 @@ Push 后即可在 GitHub 建立 PR。
 # 📝 10. 联系方式与支持
 
 若有任何问题，请通过：
-Email: support@intracity.ai
-官网：https://intracity.ai
+Email: techlead@intracity.ai
+
 
 - GitHub Issue  
 - 微信（kyostarsunson）
