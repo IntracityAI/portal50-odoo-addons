@@ -1,8 +1,9 @@
-name: "外包测试任务"
-about: "用于外包人员的基础 Odoo 技能测试与 PR 流程验证"
-title: "[Test] Portal50 外包测试任务 - 请填写你的名字"
-labels: test-task
-assignees: ""
+---
+name: "🧪 外包测试任务（必须完成）"
+about: "用于外包开发人员的测试任务模板，可重复无限次使用"
+title: "[TEST] 外包测试任务 - 填写你的名字"
+labels: ["test-task"]
+assignees: []
 ---
 
 # Portal50 / Intracity AI — 外包测试任务
@@ -59,7 +60,7 @@ python3 odoo-bin -i portal50_test_module -d mydb
 1. Fork 仓库  
    https://github.com/IntracityAI/portal50-odoo-addons
 
-2. 创建开发分支：
+2. 基于 dev 分支创建开发分支，例如：
 
 ```
 git checkout -b feature-test-module
@@ -85,5 +86,9 @@ PR 必须包含：
 ## 注意事项
 
 - 所有代码必须放在 `addons/portal50_test_module/` 下  
-- 禁止修改 Odoo 核心文件  
-- 模块结构必须符合 Odoo 官方标准  
+
+
+（该项目用于筛选开发能力，不合格则无法进入主项目。）
+
+
+收到 Pull Request，我们将进行自动化与人工双重审核。
