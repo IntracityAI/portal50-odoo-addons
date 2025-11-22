@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- List View -->
+    <record id="view_portal50_test_model_tree" model="ir.ui.view">
+        <field name="name">portal50.test.model.tree</field>
+        <field name="model">portal50.test.model</field>
+        <field name="arch" type="xml">
+            <list string="Test Records">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_portal50_test_model_form" model="ir.ui.view">
+        <field name="name">portal50.test.model.form</field>
+        <field name="model">portal50.test.model</field>
+        <field name="arch" type="xml">
+            <form string="Test Record">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description" placeholder="Enter description..."/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_portal50_test_model" model="ir.actions.act_window">
+        <field name="name">Test Records</field>
+        <field name="res_model">portal50.test.model</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first test record!
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu: Settings > Portal50 Test > Test Records -->
+    <menuitem id="menu_portal50_test_root"
+              name="Portal50 Test"
+              parent="base.menu_administration"
+              sequence="100"
+              groups="base.group_system"/>
+
+    <menuitem id="menu_portal50_test_records"
+              name="Test Records"
+              parent="portal50_test_module.menu_portal50_test_root"
+              action="action_portal50_test_model"
+              sequence="10"/>
+</odoo>
+
